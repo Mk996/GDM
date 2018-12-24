@@ -1,0 +1,27 @@
+{
+  "name": "gdm",
+  "version": "1.0.0",
+  "description": "Godown Management",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "electron": "^4.0.0",
+    "electron-reload": "^1.4.0",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "electron index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mk996/GDM.git"
+  },
+  "author": "Maharshi Gor ,  Devang Chheda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mk996/GDM/issues"
+  },
+  "homepage": "https://github.com/Mk996/GDM#readme"
+}
