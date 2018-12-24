@@ -26,3 +26,26 @@ exports.openWindow = (filename) => {
         
     
 }
+
+exports.connectToDatabase = (databasename) => {
+    // Including mysql
+    var mysql = require('mysql')
+
+    // Creating of connection variable
+    var connection = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "aone1234",
+        database: databasename
+    })
+
+    connection.connect((err) => {
+        if (err) {
+            return alert(err)
+        }
+
+
+    })
+
+    return connection
+}
