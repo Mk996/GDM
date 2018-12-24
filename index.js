@@ -14,3 +14,15 @@ app.on('ready' , () =>{
     win.loadURL(`file://${__dirname}/index.html`)
 
 })
+
+exports.openWindow = (filename) => {
+
+        let win = new BrowserWindow({
+            autoHideMenuBar: true,
+        })
+        win.loadURL(`file://${__dirname}/` + filename + `.html`)
+        win.minimize()
+        win.maximize()
+        
+    
+}

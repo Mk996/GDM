@@ -10,8 +10,12 @@
     </body>
     <script>
         
+        const $ = require('jquery')
+        const remote = electron.remote
+        const index = remote.require('./index.js')
+
         window.setTimeout(() => {
-            window.location.href = "stock.html";
+            index.openWindow('stock')
         }, 2000);
     
     </script>
