@@ -11,11 +11,16 @@
     <script>
         
         const $ = require('jquery')
+        const electron = require('electron')
         const remote = electron.remote
         const index = remote.require('./index.js')
 
+
+
         window.setTimeout(() => {
             index.openWindow('stock')
+            window.close()
+        
         }, 2000);
     
     </script>

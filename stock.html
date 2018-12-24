@@ -1,8 +1,57 @@
 <html>
     <head>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
     </head>
     <body>
 
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Godown Management</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse navbar-right" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link active" href="#">Stock <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Purchase</a>
+              <a class="nav-item nav-link" href="#">Sell</a>
+              <a class="nav-item nav-link" href="add_product.html">Add Product</a>
+              <a class="nav-item nav-link" href="add_category.html">Add Category</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Body of the page -->
+        <div class="container">
+          
+          <!-- Search bar -->
+          <div class="row" style="margin-top: 5%;">
+            <div class="col-1" style="text-align:right;padding-top:0.5%;color:gray">
+                <i class="fa fa-search" style="font-size:24px;"></i>
+            </div>
+            <div class="col-11">
+                <input class="form-control" type="text" placeholder="Search Product Name Here ..."/>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Table -->
+        <div class="form-group" style="margin-top:3%;text-align:center;">
+          <table style="display: inline-block;border: 5px">
+            <thead>
+              <th style="width:60%">Product Name</th>
+              <th style="width:30%">Category</th>
+              <th style="width:10%">Stock</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+        
     </body>
 </html>
